@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pyprojv2"
+version = "0.1.0"
+description = ""
+authors = ["Samuele Bruna"]
+readme = "README.md"
+packages = [{include = "pyprojv2", from = "src"}]
+
+[tool.poetry.scripts]
+pyprojv2 = "pyprojv2.__main__:app"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = {extras = ["all"], version = "^0.10.0"}
+hellower = { path = "../libraries/hellower", develop = true }
+mathmad = { path = "../libraries/mathmad", develop = true }
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+setuptools = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
