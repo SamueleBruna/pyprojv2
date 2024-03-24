@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "hellower"
+version = "0.1.0"
+description = ""
+authors = ["Samuele Bruna"]
+readme = "README.md"
+packages = [{include = "hellower", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+setuptools = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

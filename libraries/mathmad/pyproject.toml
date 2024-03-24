@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mathmad"
+version = "0.1.0"
+description = ""
+authors = ["Samuele Bruna <samuele.bruna.nttdata@skytv.it>"]
+readme = "README.md"
+packages = [{include = "mathmad", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+setuptools = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
