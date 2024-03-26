@@ -13,8 +13,8 @@ class MyTestCase(unittest.TestCase):
         result = runner.invoke(app, ["fibonacci", "1"])
         output = "The first 1 Fibonacci Series numbers are:\n"
         output += "1\t\nTheir sum is 1"
-        assert result.exit_code == 0
 
+        assert result.exit_code == 0
         assert output in result.stdout
 
     def test_app_2(self):
