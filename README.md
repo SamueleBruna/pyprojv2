@@ -1,4 +1,4 @@
-# pyprojv2 #
+# pyprojv2  👋 🔢
 
 This project has its aim to create a simple python package creating a CLI. The CLI will output the desired first n numbers of the Fibonacci series.\
 There is a CLI Option available that asks to insert the user name in prompt and then says hello to him.\
