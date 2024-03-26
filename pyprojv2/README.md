@@ -1,1 +1,0 @@
-![pyprojv2_image.png](..%2F..%2Fpyprojv2_image.png)
